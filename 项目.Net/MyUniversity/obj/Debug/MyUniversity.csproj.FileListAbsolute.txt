@@ -1,0 +1,148 @@
+c:\users\administrator\documents\visual studio 2017\Projects\MyUniversity\MyUniversity\bin\ApplicationInsights.config
+c:\users\administrator\documents\visual studio 2017\Projects\MyUniversity\MyUniversity\bin\roslyn\csc.exe
+c:\users\administrator\documents\visual studio 2017\Projects\MyUniversity\MyUniversity\bin\roslyn\csc.exe.config
+c:\users\administrator\documents\visual studio 2017\Projects\MyUniversity\MyUniversity\bin\roslyn\csc.rsp
+c:\users\administrator\documents\visual studio 2017\Projects\MyUniversity\MyUniversity\bin\roslyn\csi.exe
+c:\users\administrator\documents\visual studio 2017\Projects\MyUniversity\MyUniversity\bin\roslyn\csi.rsp
+c:\users\administrator\documents\visual studio 2017\Projects\MyUniversity\MyUniversity\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\administrator\documents\visual studio 2017\Projects\MyUniversity\MyUniversity\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\administrator\documents\visual studio 2017\Projects\MyUniversity\MyUniversity\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+c:\users\administrator\documents\visual studio 2017\Projects\MyUniversity\MyUniversity\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\administrator\documents\visual studio 2017\Projects\MyUniversity\MyUniversity\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+c:\users\administrator\documents\visual studio 2017\Projects\MyUniversity\MyUniversity\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\administrator\documents\visual studio 2017\Projects\MyUniversity\MyUniversity\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\administrator\documents\visual studio 2017\Projects\MyUniversity\MyUniversity\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+c:\users\administrator\documents\visual studio 2017\Projects\MyUniversity\MyUniversity\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+c:\users\administrator\documents\visual studio 2017\Projects\MyUniversity\MyUniversity\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\administrator\documents\visual studio 2017\Projects\MyUniversity\MyUniversity\bin\roslyn\System.AppContext.dll
+c:\users\administrator\documents\visual studio 2017\Projects\MyUniversity\MyUniversity\bin\roslyn\System.Collections.Immutable.dll
+c:\users\administrator\documents\visual studio 2017\Projects\MyUniversity\MyUniversity\bin\roslyn\System.Diagnostics.StackTrace.dll
+c:\users\administrator\documents\visual studio 2017\Projects\MyUniversity\MyUniversity\bin\roslyn\System.IO.FileSystem.dll
+c:\users\administrator\documents\visual studio 2017\Projects\MyUniversity\MyUniversity\bin\roslyn\System.IO.FileSystem.Primitives.dll
+c:\users\administrator\documents\visual studio 2017\Projects\MyUniversity\MyUniversity\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\administrator\documents\visual studio 2017\Projects\MyUniversity\MyUniversity\bin\roslyn\vbc.exe
+c:\users\administrator\documents\visual studio 2017\Projects\MyUniversity\MyUniversity\bin\roslyn\vbc.exe.config
+c:\users\administrator\documents\visual studio 2017\Projects\MyUniversity\MyUniversity\bin\roslyn\vbc.rsp
+c:\users\administrator\documents\visual studio 2017\Projects\MyUniversity\MyUniversity\bin\roslyn\VBCSCompiler.exe
+c:\users\administrator\documents\visual studio 2017\Projects\MyUniversity\MyUniversity\bin\roslyn\VBCSCompiler.exe.config
+c:\users\administrator\documents\visual studio 2017\Projects\MyUniversity\MyUniversity\bin\MyUniversity.dll.config
+c:\users\administrator\documents\visual studio 2017\Projects\MyUniversity\MyUniversity\bin\MyUniversity.dll
+c:\users\administrator\documents\visual studio 2017\Projects\MyUniversity\MyUniversity\bin\MyUniversity.pdb
+c:\users\administrator\documents\visual studio 2017\Projects\MyUniversity\MyUniversity\bin\Antlr3.Runtime.dll
+c:\users\administrator\documents\visual studio 2017\Projects\MyUniversity\MyUniversity\bin\Microsoft.AI.Agent.Intercept.dll
+c:\users\administrator\documents\visual studio 2017\Projects\MyUniversity\MyUniversity\bin\Microsoft.AI.DependencyCollector.dll
+c:\users\administrator\documents\visual studio 2017\Projects\MyUniversity\MyUniversity\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\users\administrator\documents\visual studio 2017\Projects\MyUniversity\MyUniversity\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\users\administrator\documents\visual studio 2017\Projects\MyUniversity\MyUniversity\bin\Microsoft.AI.Web.dll
+c:\users\administrator\documents\visual studio 2017\Projects\MyUniversity\MyUniversity\bin\Microsoft.AI.WindowsServer.dll
+c:\users\administrator\documents\visual studio 2017\Projects\MyUniversity\MyUniversity\bin\Microsoft.ApplicationInsights.dll
+c:\users\administrator\documents\visual studio 2017\Projects\MyUniversity\MyUniversity\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\administrator\documents\visual studio 2017\Projects\MyUniversity\MyUniversity\bin\Microsoft.Web.Infrastructure.dll
+c:\users\administrator\documents\visual studio 2017\Projects\MyUniversity\MyUniversity\bin\Newtonsoft.Json.dll
+c:\users\administrator\documents\visual studio 2017\Projects\MyUniversity\MyUniversity\bin\System.Web.Helpers.dll
+c:\users\administrator\documents\visual studio 2017\Projects\MyUniversity\MyUniversity\bin\System.Web.Mvc.dll
+c:\users\administrator\documents\visual studio 2017\Projects\MyUniversity\MyUniversity\bin\System.Web.Optimization.dll
+c:\users\administrator\documents\visual studio 2017\Projects\MyUniversity\MyUniversity\bin\System.Web.Razor.dll
+c:\users\administrator\documents\visual studio 2017\Projects\MyUniversity\MyUniversity\bin\System.Web.WebPages.Deployment.dll
+c:\users\administrator\documents\visual studio 2017\Projects\MyUniversity\MyUniversity\bin\System.Web.WebPages.dll
+c:\users\administrator\documents\visual studio 2017\Projects\MyUniversity\MyUniversity\bin\System.Web.WebPages.Razor.dll
+c:\users\administrator\documents\visual studio 2017\Projects\MyUniversity\MyUniversity\bin\WebGrease.dll
+c:\users\administrator\documents\visual studio 2017\Projects\MyUniversity\MyUniversity\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\administrator\documents\visual studio 2017\Projects\MyUniversity\MyUniversity\bin\System.Web.Helpers.xml
+c:\users\administrator\documents\visual studio 2017\Projects\MyUniversity\MyUniversity\bin\System.Web.Mvc.xml
+c:\users\administrator\documents\visual studio 2017\Projects\MyUniversity\MyUniversity\bin\System.Web.Optimization.xml
+c:\users\administrator\documents\visual studio 2017\Projects\MyUniversity\MyUniversity\bin\System.Web.Razor.xml
+c:\users\administrator\documents\visual studio 2017\Projects\MyUniversity\MyUniversity\bin\System.Web.WebPages.xml
+c:\users\administrator\documents\visual studio 2017\Projects\MyUniversity\MyUniversity\bin\System.Web.WebPages.Deployment.xml
+c:\users\administrator\documents\visual studio 2017\Projects\MyUniversity\MyUniversity\bin\System.Web.WebPages.Razor.xml
+c:\users\administrator\documents\visual studio 2017\Projects\MyUniversity\MyUniversity\bin\Antlr3.Runtime.pdb
+c:\users\administrator\documents\visual studio 2017\Projects\MyUniversity\MyUniversity\bin\Newtonsoft.Json.xml
+c:\users\administrator\documents\visual studio 2017\Projects\MyUniversity\MyUniversity\bin\Microsoft.ApplicationInsights.xml
+c:\users\administrator\documents\visual studio 2017\Projects\MyUniversity\MyUniversity\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\administrator\documents\visual studio 2017\Projects\MyUniversity\MyUniversity\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\users\administrator\documents\visual studio 2017\Projects\MyUniversity\MyUniversity\bin\Microsoft.AI.WindowsServer.xml
+c:\users\administrator\documents\visual studio 2017\Projects\MyUniversity\MyUniversity\bin\Microsoft.AI.Web.xml
+c:\users\administrator\documents\visual studio 2017\Projects\MyUniversity\MyUniversity\bin\zh-Hans\System.Web.Helpers.resources.dll
+c:\users\administrator\documents\visual studio 2017\Projects\MyUniversity\MyUniversity\bin\zh-Hans\System.Web.Mvc.resources.dll
+c:\users\administrator\documents\visual studio 2017\Projects\MyUniversity\MyUniversity\bin\zh-Hans\System.Web.Optimization.resources.dll
+c:\users\administrator\documents\visual studio 2017\Projects\MyUniversity\MyUniversity\bin\zh-Hans\System.Web.Razor.resources.dll
+c:\users\administrator\documents\visual studio 2017\Projects\MyUniversity\MyUniversity\bin\zh-Hans\System.Web.WebPages.resources.dll
+c:\users\administrator\documents\visual studio 2017\Projects\MyUniversity\MyUniversity\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+c:\users\administrator\documents\visual studio 2017\Projects\MyUniversity\MyUniversity\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+c:\users\administrator\documents\visual studio 2017\Projects\MyUniversity\MyUniversity\obj\Debug\MyUniversity.dll
+c:\users\administrator\documents\visual studio 2017\Projects\MyUniversity\MyUniversity\obj\Debug\MyUniversity.pdb
+C:\Users\Administrator\documents\visual studio 2017\Projects\MyUniversity\MyUniversity\obj\Debug\MyUniversity.csprojResolveAssemblyReference.cache
+D:\资料备份\大三\工作室项目\MyUniversity\MyUniversity\bin\ApplicationInsights.config
+D:\资料备份\大三\工作室项目\MyUniversity\MyUniversity\bin\roslyn\csc.exe
+D:\资料备份\大三\工作室项目\MyUniversity\MyUniversity\bin\roslyn\csc.exe.config
+D:\资料备份\大三\工作室项目\MyUniversity\MyUniversity\bin\roslyn\csc.rsp
+D:\资料备份\大三\工作室项目\MyUniversity\MyUniversity\bin\roslyn\csi.exe
+D:\资料备份\大三\工作室项目\MyUniversity\MyUniversity\bin\roslyn\csi.rsp
+D:\资料备份\大三\工作室项目\MyUniversity\MyUniversity\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\资料备份\大三\工作室项目\MyUniversity\MyUniversity\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\资料备份\大三\工作室项目\MyUniversity\MyUniversity\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\资料备份\大三\工作室项目\MyUniversity\MyUniversity\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\资料备份\大三\工作室项目\MyUniversity\MyUniversity\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\资料备份\大三\工作室项目\MyUniversity\MyUniversity\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\资料备份\大三\工作室项目\MyUniversity\MyUniversity\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\资料备份\大三\工作室项目\MyUniversity\MyUniversity\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\资料备份\大三\工作室项目\MyUniversity\MyUniversity\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\资料备份\大三\工作室项目\MyUniversity\MyUniversity\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\资料备份\大三\工作室项目\MyUniversity\MyUniversity\bin\roslyn\System.AppContext.dll
+D:\资料备份\大三\工作室项目\MyUniversity\MyUniversity\bin\roslyn\System.Collections.Immutable.dll
+D:\资料备份\大三\工作室项目\MyUniversity\MyUniversity\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\资料备份\大三\工作室项目\MyUniversity\MyUniversity\bin\roslyn\System.IO.FileSystem.dll
+D:\资料备份\大三\工作室项目\MyUniversity\MyUniversity\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\资料备份\大三\工作室项目\MyUniversity\MyUniversity\bin\roslyn\System.Reflection.Metadata.dll
+D:\资料备份\大三\工作室项目\MyUniversity\MyUniversity\bin\roslyn\vbc.exe
+D:\资料备份\大三\工作室项目\MyUniversity\MyUniversity\bin\roslyn\vbc.exe.config
+D:\资料备份\大三\工作室项目\MyUniversity\MyUniversity\bin\roslyn\vbc.rsp
+D:\资料备份\大三\工作室项目\MyUniversity\MyUniversity\bin\roslyn\VBCSCompiler.exe
+D:\资料备份\大三\工作室项目\MyUniversity\MyUniversity\bin\roslyn\VBCSCompiler.exe.config
+D:\资料备份\大三\工作室项目\MyUniversity\MyUniversity\bin\MyUniversity.dll.config
+D:\资料备份\大三\工作室项目\MyUniversity\MyUniversity\bin\MyUniversity.dll
+D:\资料备份\大三\工作室项目\MyUniversity\MyUniversity\bin\MyUniversity.pdb
+D:\资料备份\大三\工作室项目\MyUniversity\MyUniversity\bin\Antlr3.Runtime.dll
+D:\资料备份\大三\工作室项目\MyUniversity\MyUniversity\bin\Microsoft.AI.Agent.Intercept.dll
+D:\资料备份\大三\工作室项目\MyUniversity\MyUniversity\bin\Microsoft.AI.DependencyCollector.dll
+D:\资料备份\大三\工作室项目\MyUniversity\MyUniversity\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\资料备份\大三\工作室项目\MyUniversity\MyUniversity\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\资料备份\大三\工作室项目\MyUniversity\MyUniversity\bin\Microsoft.AI.Web.dll
+D:\资料备份\大三\工作室项目\MyUniversity\MyUniversity\bin\Microsoft.AI.WindowsServer.dll
+D:\资料备份\大三\工作室项目\MyUniversity\MyUniversity\bin\Microsoft.ApplicationInsights.dll
+D:\资料备份\大三\工作室项目\MyUniversity\MyUniversity\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\资料备份\大三\工作室项目\MyUniversity\MyUniversity\bin\Microsoft.Web.Infrastructure.dll
+D:\资料备份\大三\工作室项目\MyUniversity\MyUniversity\bin\Newtonsoft.Json.dll
+D:\资料备份\大三\工作室项目\MyUniversity\MyUniversity\bin\System.Web.Helpers.dll
+D:\资料备份\大三\工作室项目\MyUniversity\MyUniversity\bin\System.Web.Mvc.dll
+D:\资料备份\大三\工作室项目\MyUniversity\MyUniversity\bin\System.Web.Optimization.dll
+D:\资料备份\大三\工作室项目\MyUniversity\MyUniversity\bin\System.Web.Razor.dll
+D:\资料备份\大三\工作室项目\MyUniversity\MyUniversity\bin\System.Web.WebPages.Deployment.dll
+D:\资料备份\大三\工作室项目\MyUniversity\MyUniversity\bin\System.Web.WebPages.dll
+D:\资料备份\大三\工作室项目\MyUniversity\MyUniversity\bin\System.Web.WebPages.Razor.dll
+D:\资料备份\大三\工作室项目\MyUniversity\MyUniversity\bin\WebGrease.dll
+D:\资料备份\大三\工作室项目\MyUniversity\MyUniversity\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\资料备份\大三\工作室项目\MyUniversity\MyUniversity\bin\System.Web.Helpers.xml
+D:\资料备份\大三\工作室项目\MyUniversity\MyUniversity\bin\System.Web.Mvc.xml
+D:\资料备份\大三\工作室项目\MyUniversity\MyUniversity\bin\System.Web.Optimization.xml
+D:\资料备份\大三\工作室项目\MyUniversity\MyUniversity\bin\System.Web.Razor.xml
+D:\资料备份\大三\工作室项目\MyUniversity\MyUniversity\bin\System.Web.WebPages.xml
+D:\资料备份\大三\工作室项目\MyUniversity\MyUniversity\bin\System.Web.WebPages.Deployment.xml
+D:\资料备份\大三\工作室项目\MyUniversity\MyUniversity\bin\System.Web.WebPages.Razor.xml
+D:\资料备份\大三\工作室项目\MyUniversity\MyUniversity\bin\Antlr3.Runtime.pdb
+D:\资料备份\大三\工作室项目\MyUniversity\MyUniversity\bin\Newtonsoft.Json.xml
+D:\资料备份\大三\工作室项目\MyUniversity\MyUniversity\bin\Microsoft.ApplicationInsights.xml
+D:\资料备份\大三\工作室项目\MyUniversity\MyUniversity\bin\Microsoft.AI.DependencyCollector.xml
+D:\资料备份\大三\工作室项目\MyUniversity\MyUniversity\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\资料备份\大三\工作室项目\MyUniversity\MyUniversity\bin\Microsoft.AI.WindowsServer.xml
+D:\资料备份\大三\工作室项目\MyUniversity\MyUniversity\bin\Microsoft.AI.Web.xml
+D:\资料备份\大三\工作室项目\MyUniversity\MyUniversity\bin\zh-Hans\System.Web.Helpers.resources.dll
+D:\资料备份\大三\工作室项目\MyUniversity\MyUniversity\bin\zh-Hans\System.Web.Mvc.resources.dll
+D:\资料备份\大三\工作室项目\MyUniversity\MyUniversity\bin\zh-Hans\System.Web.Optimization.resources.dll
+D:\资料备份\大三\工作室项目\MyUniversity\MyUniversity\bin\zh-Hans\System.Web.Razor.resources.dll
+D:\资料备份\大三\工作室项目\MyUniversity\MyUniversity\bin\zh-Hans\System.Web.WebPages.resources.dll
+D:\资料备份\大三\工作室项目\MyUniversity\MyUniversity\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+D:\资料备份\大三\工作室项目\MyUniversity\MyUniversity\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+D:\资料备份\大三\工作室项目\MyUniversity\MyUniversity\obj\Debug\MyUniversity.csprojResolveAssemblyReference.cache
+D:\资料备份\大三\工作室项目\MyUniversity\MyUniversity\obj\Debug\MyUniversity.dll
+D:\资料备份\大三\工作室项目\MyUniversity\MyUniversity\obj\Debug\MyUniversity.pdb

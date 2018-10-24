@@ -1,0 +1,226 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Home</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/home.css">
+</head>
+<!-- 注释：第一页 鼠标移入图标，图标移动的函数，可以给图标加一层DIV使其扩大一圈。因为mousemove函数每一像素便运行，很影响系统资源 -->
+<!-- 注释：第一页 云朵的鼠标移入效果，暂时不知道以添加拥有animation的class使图片运动的效果 在结束时如何平滑移动会原位。 本可以用JQ实现，暂时不想放着不动 -->
+<!-- 注释：第二页 箭头的跳转，绑定jq事件的时候可以想办法放一起，减少代码行数，而不是每一个箭头绑定一个click -->
+<!-- 注释：第二页 图片失效的状况-->
+<!-- 注释：第二页 整合图片跳转的jQ代码， 若将 this (class)传入一个带参数的函数中，怎么判断当前传入的this是哪个class -->
+<!-- 注释：第二页 图片跳转时过快会闪烁 未解决 -->
+<!-- 注释：第二页 判断跳转的隐藏条件不够万能 （现在是在已知图片ID的情况下强行附加条件）-->
+
+<body>
+<div id="awd-site-wrap" class="bg bg-comment">
+<!-- 头 内容切换的遮罩和画布 -->
+	<div id="bg">
+        <div id="overlay">
+            <div class="awd-site-bg bg-comment"></div>
+            <div class="awd-site-bg bg-map"></div>
+            <div class="awd-site-bg bg-login"></div>
+        </div>
+    	<canvas id="awd-site-canvas"></canvas>
+    </div>
+<!-- 尾 内容切换的遮罩和画布 -->
+<!-- 头 大标题和导航栏 -->
+    <header id="awd-site-header">
+		<div class="awd-site-logo logo-black"></div>
+        <nav id="awd-site-nav" class="awd-site-nav" >
+                <ul>
+                    <li><a href="#" data-slide="comment" class="active">高校评论区</a></li>
+                    <li><a href="#" data-slide="map">地图导航区</a></li>
+                    <li><a href="#" data-slide="login">登录与注册</a></li>
+                </ul>
+        </nav>
+    </header> 
+<!-- 尾 大标题和导航栏 （ID等勿随意修改 影响JQ）-->
+<!-- 头 网站主体 -->
+	<main class="uni-site-main">
+    	<div class="slide-comment" data-slide="comment">
+        	<div class="slide-comment-first">
+            	<div class="comment-col-first">
+                	<div class="comment-col-title">君から見た僕はきっと ただの友達の友達 たかが知人Bにむけられた 笑顔があれならもう 恐ろしい人だ</div>
+                    <div class="comment-col-meta">
+                    	<i class="meta-line"></i>
+                        <span class="meta-username">高岭的花子小姐</span>
+                        <time class="meta-time">2017-06-02 14:00:00</time>
+                    </div>
+                </div>
+                <div class="comment-icon-first">   
+                	<div class="icon-sun"></div>
+                </div> 
+            </div>
+        	<div class="slide-comment-second">
+            	<div class="comment-icon-second">
+                	<div class="icon-cloud cloud-1"></div>   
+                    <div class="icon-cloud cloud-2"></div> 
+                    <div class="icon-cloud cloud-3"></div>
+                </div>
+                <div class="comment-col-second">
+                	<div class="comment-col-title">雨落也无声 风过也无痕 悲伤不敢声明怕扰乱气氛</div>
+                    <div class="comment-col-meta">
+                    	<i class="meta-line"></i>
+                        <span class="meta-username">惊天动地</span>
+                        <time class="meta-time">2017-06-02 14:00:00</time>
+                    </div>
+                </div>          
+            </div>
+        	<div class="slide-comment-third">
+            	<div class="comment-col-third">
+                	<div class="comment-col-title">You have the balance i have the time that only blindly.I could read you, I could read you</div>
+                    <div class="comment-col-meta">
+                    	<i class="meta-line"></i>
+                        <span class="meta-username">You're Somebody Else</span>
+                        <time class="meta-time">2017-06-02 14:00:00</time>
+                    </div>
+                </div>
+                <div class="comment-icon-third">   
+                	<div class="icon-cloud cloud-1"></div>   
+                    <div class="icon-cloud cloud-2"></div> 
+                    <div class="icon-cloud cloud-3"></div>
+                </div> 
+            </div>
+        	<div class="slide-comment-forth">
+            	<div class="comment-icon-forth">
+                	<div class="icon-flower flower-1"></div>
+                    <div class="icon-flower flower-2"></div>
+                    <div class="icon-flower flower-3"></div>
+                    <div class="icon-flower flower-4"></div>
+                </div>
+                <div class="comment-col-forth">
+                	<div class="comment-col-title">今このときも　繋がっているよ 離れていても 繋がっているよ 何があっても</div>
+                    <div class="comment-col-meta">
+                    	<i class="meta-line"></i>
+                        <span class="meta-username">公路电影</span>
+                        <time class="meta-time">2017-06-02 14:00:00</time>
+                    </div>
+                </div>          
+            </div>
+        </div>
+        <div class="slide-map" data-slide="map">
+        	<div class="map-frame">
+            	<div class="map-display">
+                	<div class="map-skip-icon">
+                    	<div class="skip-icon-up">
+                        	<a href="#" class="skip-a-lable" ></a>
+                        </div>
+                        <div class="skip-icon-right">
+                        	<a href="#" class="skip-a-lable rotate-90"></a>
+                        </div>
+                        <div class="skip-icon-bottom">
+                        	<a href="#" class="skip-a-lable rotate-180"></a>
+                        </div>
+                        <div class="skip-icon-left">
+                        	<a href="#" class="skip-a-lable rotate-270"></a>
+                        </div>
+                    </div>
+                    <div class="map-pictures">
+                    	<div class="pictures-current">
+                        	<img src="assets/img/loading.jpg" alt="current" class="pictures-img-label">
+                        </div>
+                        <div class="pictures-up">
+                        	<img src="assets/img/loading.jpg" alt="up" class="pictures-img-label">
+                        </div>
+                        <div class="pictures-right">
+                        	<img src="assets/img/loading.jpg" alt="right" class="pictures-img-label">
+                        </div>
+                        <div class="pictures-bottom">
+                        	<img src="assets/img/loading.jpg" alt="bottom" class="pictures-img-label">
+                        </div>
+                        <div class="pictures-left">
+                        	<img src="assets/img/loading.jpg" alt="left" class="pictures-img-label">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="map-navigation">
+                <div class="navigation-list">
+                	<ul>
+                    	<li class="navigation-li-lable">
+                        	<a href="Map.html" class="navigation-a-lable">江西师范大学-瑶湖校区</a>
+                        </li>
+                    	<li class="navigation-li-lable">
+                        	<a href="Map.html" class="navigation-a-lable">南昌大学-前湖校区</a>
+                        </li>
+                    	<li class="navigation-li-lable">
+                        	<a href="Map.html" class="navigation-a-lable">江西师范大学-老校区</a>
+                        </li>
+                    	<li class="navigation-li-lable">
+                        	<a href="Map.html" class="navigation-a-lable">南昌大学-老校区</a>
+                        </li>
+                    	<li class="navigation-li-lable">
+                        	<a href="Map.html" class="navigation-a-lable">华东交通大学</a>
+                        </li>
+                    	<li class="navigation-li-lable">
+							<a href="Map.html" class="navigation-a-lable">江西财经大学</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navigation-more">
+                	<a href="Map.html" >..更多</a>
+                </div>
+            </div>
+        </div>
+        <div class="slide-login" data-slide="login">
+			<div class="login-frame">
+				<div class="login-wrap"></div> 
+                <div class="login-main">
+                        <div class="cont_login">
+                          <div class="cont_info_log_sign_up">
+                            <div class="col_md_login">
+                              <div class="cont_ba_opcitiy">
+                                <h2>登录</h2>
+                                <p>登录后就可以在评论区和他人讨论 并且申请制作自己学校的地图哦</p>
+                                <button class="btn_login" onclick="cambiar_login()">LOGIN</button>
+                              </div>
+                            </div>
+                            <div class="col_md_sign_up">
+                              <div class="cont_ba_opcitiy">
+                                <h2>注册</h2>
+                                <p>申请成为新成员 加入大学生活 观看自己心仪的大学</p>
+                                <button class="btn_sign_up" onclick="cambiar_sign_up()">SIGN UP</button>
+                              </div>
+                            </div>
+                          </div>
+                          
+                          <div class="cont_back_info"></div>
+                          
+                          <div class="cont_forms" >
+                            <div class="cont_form_login">
+                              <h2>登录</h2>
+                              <input type="text" placeholder="这里输入您的账号" />
+                              <input type="password" placeholder="这里输入您的密码" />
+                              <button class="btn_login" onclick="cambiar_login()">LOGIN</button>
+                            </div>
+                            <div class="cont_form_sign_up">
+                              <h2>注册</h2>
+                              <input type="text" placeholder="这里输入您的账号" />
+                              <input type="text" placeholder="取个喜欢的名字（仅限中文）" />
+                              <input type="password" placeholder="这里是密码" />
+                              <input type="password" placeholder="确认下您的密码" />
+                              <button class="btn_sign_up" onclick="cambiar_sign_up()">SIGN UP</button>
+                            </div>
+                          </div>
+                        </div>
+                </div>
+            </div>        	
+        </div>
+    </main>
+    <footer class="uni-site-footer">
+    	<p class="footer-content">© 2017 My University.  All Rights Reserved</p>
+    </footer>
+</div>
+
+</body>
+<script type="text/javascript" src="assets/js/index.js"></script>
+<script type="text/javascript" src="assets/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="assets/js/vendor.js"></script>
+<script type="text/javascript" src="assets/js/options.js"></script>
+<script type="text/javascript" src="assets/js/main.js"></script>
+<script type="text/javascript" src="assets/js/home.js"></script>
+
+</html>

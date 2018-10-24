@@ -1,0 +1,137 @@
+﻿@using System.Data
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Topic</title>
+    <link rel="stylesheet" type="text/css" href="../Content/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../Content/topic.css">
+</head>
+<body>
+    @{ 
+        DataTable dt1 = (DataTable)ViewData["dt1"];
+        DataTable dt2 = (DataTable)ViewData["dt2"];
+        DataTable dt3 = (DataTable)ViewData["dt3"];
+        DataTable dt4 = (DataTable)ViewData["dt4"];
+        DataTable dt5 = (DataTable)ViewData["dt5"];
+    }
+    <header class="uni-site-header">
+        <div class="header-location">
+            <div class="header-logo">
+                <a href="/Home/Home" class="logo-a-lable"></a>
+            </div>
+            <nav class="header-navigation">
+                <ul>
+                    <li class="navigation-li-lable">
+                        <a href="comment.html" class="navigation-a-lable">高校探讨</a>
+                    </li>
+                    <li class="navigation-li-lable">
+                        <a href="" class="navigation-a-lable">加入大家</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="topic-site-main">
+        <div class="main-title">
+            <div class="title-schoolinfo">
+                <img src="../img/school-badge.png" alt="" class="schoolinfo-schoolbadge">
+                <div class="schoolinfo-schoolname">
+                    <span class="schoolinfo-schoolname-span">江西师范大学</span>
+                </div>
+            </div>
+            <div class="title-heading">
+                <h1 class="title-heading-h1">@dt1.Rows[0]["TopicTitle"]</h1>
+            </div>
+            <div class="title-content">
+                <div class="content-authorface">
+                    <img src="@dt2.Rows[0]["UserFace"]" alt="" class="content-authorface-img">
+                </div>
+                <div class="content-authorname">@dt2.Rows[0]["UserName"]</div>
+                <div class="content-description">
+                    <div class="content-description-div">@dt1.Rows[0]["TopicContent"]</div>
+                </div>
+            </div>
+            <div class="title-situation">
+                <span class="situation-answer">@dt3.Rows.Count</span>
+                <span class="situation-view">100</span>
+                <span class="situation-time">@dt1.Rows[0]["TopicTime"]</span>
+            </div>
+        </div>
+        <div class="main-replies">
+            <ul>@{
+                for (var i = 0; i < dt3.Rows.Count; i++)
+                {
+                    <li class="replies-list-li" data-id="@dt3.Rows[i]["ReplyId"]">
+                        <div class="list-left-userface">
+                            <img src="@dt4.Rows[i]["UserFace"]" alt="" class="list-userface-img">
+                        </div>
+                        <div class="list-right-userinfo">
+                            <div class="list-userinfo-head">
+                                <span class="userinfo-username-span">@dt4.Rows[i]["UserName"]</span>
+                                <span class="userinfo-topictime-span">@dt3.Rows[i]["ReplyTime"]</span>
+                            </div>
+                            <div class="list-userinfo-content">
+                                <p class="userinfo-useropinion-p">@dt3.Rows[i]["ReplyContent"]</p>
+                            </div>
+                        </div>
+                    </li>
+                }
+            }         
+            </ul>
+            @{
+                if (Session["UserAccount"] != null)
+                {
+                    <div class="replies-replybox">
+                        <div class="replybox-userinfo">
+                            <img src="@dt5.Rows[0]["UserFace"]" alt="" class="replybox-userinfo-img">
+                            <span class="replybox-userinfo-username">@dt5.Rows[0]["UserName"]</span>
+                            <h1 class="replybox-userinfo-note">真的不说点什么嘛？</h1>
+                        </div>
+                    </div>
+                    <div class="replies-postbox">
+                        <div class="postbox-container">
+                            <div class="postbox-container-size">
+                                <form method="post" action="/Comment/TopicReply">
+                                <div class="container-edit-box">
+                                    <div class="container-edit-left">
+                                        <img src="../img/university-head.jpg" alt="" class="edit-userface-img">
+                                    </div>
+                                    <div class="container-edit-right">
+                                        <span class="edit-topictitle">@dt1.Rows[0]["TopicTitle"]</span>
+                                        <textarea name="ReplyContent" id="" class="edit-editbox" placehold="大声告诉他你爱他.."></textarea>
+                                    </div>
+                                </div>
+                                <div class="container-submit-box">
+                                    <input type="submit" class="container-submit-input" value="发表">
+                                </div>
+                                </form>
+                                <div class="container-close-box"></div>
+                            </div>
+                        </div>
+                    </div>
+                }
+                else
+                {
+                    <div class="replies-replybox">
+                        <div class="replybox-userinfo">
+                            <img src="../img/university-head-3.png" alt="" class="replybox-userinfo-img">
+                            <span class="replybox-userinfo-username">你还没有登录唉</span>
+                            <h1 class="replybox-userinfo-note">真的不说点什么嘛？</h1>
+                        </div>
+                    </div>
+                }
+            }
+            
+        </div>
+    </main>
+<script src="../Scripts/jquery-3.1.1.min.js" type="text/javascript"></script>
+<script src="../Scripts/topic.js" type="text/javascript"></script>
+</body>
+
+
+
+</html>

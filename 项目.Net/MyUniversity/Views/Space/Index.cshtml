@@ -1,0 +1,230 @@
+﻿@using System.Data;
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../Content/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../Content/space.css">
+
+</head>
+<!-- 若父亲是浮动元素（可能还有其他情况）子元素若margin-top一般不会撑开父亲，而是直接与上一元素发生距离-->
+<body>
+    @{ 
+        DataTable dt1 = (DataTable)ViewData["dt1"];
+        DataTable dt2 = (DataTable)ViewData["dt2"];
+        DataTable dt3 = (DataTable)ViewData["dt3"];
+        DataTable dt4 = (DataTable)ViewData["dt4"];
+        DataTable dt5 = (DataTable)ViewData["dt5"];
+        DataTable dt6 = (DataTable)ViewData["dt6"];
+    }
+    <header class="uni-site-header">
+        <div class="header-location">
+            <div class="header-logo">
+                <a href="/Home/Home" class="logo-a-lable"></a>
+            </div>
+            <nav class="header-navigation">
+                <ul>
+                    <li class="navigation-li-lable">
+                        <a href="/Comment/Index" class="navigation-a-lable">高校探讨</a>
+                    </li>
+                    <li class="navigation-li-lable">
+                        <a href="Map.html" class="navigation-a-lable">高校导航</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="space-site-main">
+        <div class="space-wrapper">
+            <div class="wrapper-background">
+                <img src="..\img\comment-bg-2.jpg" alt="" class="wrapper-background-img" />
+                <div class="wrapper-background-shade"></div>
+                <div class="wrapper-background-change"></div>
+            </div>
+            <div class="wrapper-userinfo">
+                <div class="userinfo-userface">
+                    <img src="@dt1.Rows[0]["UserFace"]" alt="" class="userinfo-userface-img">
+                    <div class="userinfo-userface-shade"></div>
+                </div>
+                <div class="userinfo-userprofile">
+                    <div class="userprofile-username">
+                        <input type="text" class="userprofile-username-input">
+                        <span class="userprofile-username-span">@dt1.Rows[0]["UserName"]</span>
+                    </div>
+                    <div class="userprofile-usersign">
+                        <p style="display:none" class="hidden">@dt1.Rows[0]["UserSign"]</p>
+                        <textarea name="" class="userprofile-usersign-textarea" placeholder="真的没有什么想说的了嘛～？"></textarea>
+                    </div>
+                    <div class="userprofile-home-school-grade-sex">
+                        @{
+                            if (@dt1.Rows[0]["UserFrom"].ToString() == "")
+                            {
+                                <span class="userprofile-userhome">仍未填写</span>
+                            }
+                            else
+                            {
+                                <span class="userprofile-userhome">@dt1.Rows[0]["UserFrom"]</span>
+                            }
+                            if (@dt1.Rows[0]["UserFrom"].ToString() == "")
+                            {
+                                <span class="userprofile-userhome">仍未填写</span>
+                            }
+                            else
+                            {
+                                <span class="userprofile-userschool">@dt1.Rows[0]["UserSchool"]</span>
+                            }
+                            if (@dt1.Rows[0]["UserFrom"].ToString() == "")
+                            {
+                                <span class="userprofile-userhome">仍未填写</span>
+                            }
+                            else
+                            {
+
+                                <span class="userprofile-usergrade">@dt1.Rows[0]["UserGrade"]</span>
+                            }
+                            if (@dt1.Rows[0]["UserFrom"].ToString() == "")
+                            {
+                                <span class="userprofile-userhome">仍未填写</span>
+                            }
+                            else
+                            {
+                                <span class="userprofile-usersex">@dt1.Rows[0]["UserSex"]</span>
+                            }
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="space-main">
+            <div class="main-left">
+                <nav class="main-left-nav">
+                    <ul>
+                        <li class="main-left-li" data-slide="reply"><span class="main-left-reply active">回复</span></li>
+                        <li class="main-left-li" data-slide="topic"><span class="main-left-topic">话题</span></li>
+                        <li class="main-left-li" data-slide="edit"><span class="main-left-edit">修改资料</span></li>
+                        <li class="main-left-li" data-slide="onload"><span class="main-left-onload">上传头像</span></li>
+                    </ul>
+                    <div class="main-left-slide"></div>
+                </nav>
+            </div>
+            <div class="blur"></div>
+            <div class="main-right">
+                <div class="main-right-reply">
+                    <ul>
+                        @{
+                            for (var i = 0; i < dt3.Rows.Count; i++)
+                            {
+                                <li class="reply-list-li">
+                                    <div class="list-facebox"><img src="@dt4.Rows[i]["UserFace"]" alt="" class="list-facebox-img"></div>
+                                    <div class="list-replyinfo">
+                                        <div class="replyinfo-head">
+                                            <span class="replyinfo-username-span">@dt4.Rows[i]["UserName"]</span>
+                                            <span class="replyinfo-replytime-span">@dt3.Rows[i]["ReplyTime"]</span>
+                                        </div>
+                                        <p class="replyinfo-content-p">@dt3.Rows[i]["ReplyContent"]</p>
+                                        <a href="/Comment/Topic?id=@dt5.Rows[i]["TopicId"]" alt="" class="replyinfo-source-a">@dt5.Rows[i]["TopicTitle"]</a>
+                                    </div>
+                                </li>
+                            }
+                        }
+                    </ul>
+                </div>
+                <div class="main-right-topic">
+                    <ul>
+                        @{
+                            for (int j = 0; j < dt2.Rows.Count; j++)
+                            {
+                                <li class="topic-list-li">
+                                    <div class="topic_entire_inner">
+                                        <header class="topic_entire_header">
+                                            <h1 class="topic_entire_title">
+                                                <a href="/Comment/Topic?id=@dt2.Rows[j]["TopicId"]" class="entire_title">@dt2.Rows[j]["TopicTitle"]</a>
+                                            </h1>
+                                            <div class="topic_entire_time">
+                                                <time class="entire_time" datetime="@dt2.Rows[j]["TopicTime"]">@dt2.Rows[j]["TopicTime"]</time>
+                                            </div>
+                                        </header>
+                                        <div class="topic_entire_content">
+                                            <p>@dt2.Rows[j]["TopicContent"]</p>
+                                        </div>
+                                        <footer class="topic_entire_footer">
+                                            <span class="topic_entire_source">该文章被发布在</span>
+                                            <a href="">@dt6.Rows[j]["SchoolName"]</a>
+                                        </footer>
+                                    </div>
+                                </li>
+                            }
+                        }
+                    </ul>
+                </div>
+                @{
+                    if (Session["useraccount"].ToString() == dt1.Rows[0]["UserAccount"].ToString())
+                    {
+                        <form method="post" action="/Space/Edit">
+                            <div class="main-right-edit">
+                                <ul>
+                                    <li class="edit-list-li">
+                                        <span class="list-editname">个人昵称：</span>
+                                        <input name="UserName" type="text" class="list-editbox" placeholder="这里可以修改您的用户名哦～" value="@dt1.Rows[0]["UserName"]">
+                                    </li>
+                                    <li class="edit-list-li">
+                                        <span class="list-editname">个人签名：</span>
+                                        <textarea name="UserSign" class="list-editbox editbox-textarea" placeholder="真的没有什么想说的了嘛～？"></textarea>
+                                    </li>
+                                    <li class="edit-list-li">
+                                        <span class="list-editname">籍贯：</span>
+                                        <input name="UserFrom" type="text" class="list-editbox" placeholder="能炫耀一下大家您的家乡吗～" value="@dt1.Rows[0]["UserFrom"]">
+                                    </li>
+                                    <li class="edit-list-li">
+                                        <span class="list-editname">就读大学：</span>
+                                        <input name="UserSchool" type="text" class="list-editbox" placeholder="你这么好看 上的大学也一定很好看～" value="@dt1.Rows[0]["UserSchool"]">
+                                    </li>
+                                    <li class="edit-list-li">
+                                        <span class="list-editname">当前年级：</span>
+                                        <select name="UserGrade" class="list-editbox editbox-select">
+                                            <option value="inactive" selected="selected">--请选择--</option>
+                                            <option value="freshman">大一</option>
+                                            <option value="sophomore">大二</option>
+                                            <option value="junior">大三</option>
+                                            <option value="senior">大四</option>
+                                        </select>
+                                    </li>
+                                    <li class="edit-list-li">
+                                        <span class="list-editname">性别：</span>
+                                        <select name="UserSex" class="list-editbox editbox-select">
+                                            <option value="inactive" selected="selected">--请选择--</option>
+                                            <option value="boy">男</option>
+                                            <option value="girl">女</option>
+                                            <option value="secret">保密</option>
+                                        </select>
+                                    </li>
+                                </ul>
+                                <div class="edit-border-div"></div>
+                                <div class="edit-submit-div">
+                                    <input type="submit" class="submit-input" value="保存">
+                                </div>
+                            </div>
+                        </form>
+                    }
+                }
+                <!--<div class="main-right-block"></div>-->
+            </div>
+        </div>
+    </main>
+    <script src="../Scripts/jquery-3.1.1.min.js" type="text/javascript"></script>
+    <script src="../Scripts/space.js" type="text/javascript"></script>
+    <script>
+        $(document).on('ready', function () {
+           $('.editbox-textarea').val(@dt1.Rows[0]["UserSign"]);
+            $(".editbox-select[name='UserGrade']").val(@dt1.Rows[0]["UserGrade"]);
+            $(".editbox-select[name='UserSex']").val(@dt1.Rows[0]["Usersex"]);
+        })
+
+    </script>
+</body>
+
+</html>

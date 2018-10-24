@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<style>
+    /*====================================================
+		CSS重置
+====================================================*/
+
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video ,body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+input::-webkit-input-placeholder,input:-moz-placeholde,
+input::-moz-placeholder,input:-ms-input-placeholder{
+		color:#dfdfdf;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    height: 90%;
+}
+
+a{
+	color: inherit;
+	text-decoration:none;
+}
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    position: relative;
+    font-size: 20px;
+    line-height: 28px;
+    font-style: normal;
+    font-weight: normal;
+    background: #ffffff;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    overflow-x: hidden;
+    white-space: normal;
+	background-color: #dfeff0;
+}
+
+input,
+select {
+    font-size: 16px;
+    font-style: normal;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px 20px;
+    resize: both;
+    height: 150px;
+}
+
+
+.uni-site-header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 80px;
+	background-color: #fbfbfb;
+	box-shadow:rgba(0, 0, 0, 0.1) 0 1px 2px;
+	z-index:99;
+}
+.header-location{
+	height: 80px;
+	width: 1440px;
+	margin: 0 auto;
+
+}
+.header-logo{
+	float: left;
+}
+.logo-a-lable{
+	display: inline-block;
+	background: url(assets/img/uni-logo.png) no-repeat left center;
+	width: 300px;
+	height: 80px;
+}
+.header-navigation{
+	float: left;
+	margin-left:50px;
+}
+.navigation-li-lable{
+	display: inline-block;
+	line-height: 80px;
+	height: 80px;
+}
+.navigation-a-lable{
+	line-height: 50px;
+	display: inline-block;
+	padding: 0 15px;
+	position: relative;
+}
+	.navigation-a-lable:hover{color:#4298ac}
+	.navigation-a-lable:hover:after{
+		content: '';
+		display: inline-block;		
+		width: 80px;
+		position: absolute;
+		left: 15px;
+		bottom: 0;
+		border-bottom: 2px solid #4298ac;
+		border-radius: 50%;
+	}
+.uni-site-header{
+    position: relative;
+}
+.post-site-main{
+    width: 960px;
+    height: 100%;
+    margin: 0 auto;
+}
+    .main-title,.main-content{
+        border: none;
+        resize: none;
+        outline: none;
+        background-color: transparent;
+        font-family: Microsoft YaHei;
+    }
+    .main-title{
+        box-sizing:border-box;
+        height: 80px;
+        line-height: 80px;
+        font-size: 36px;
+        font-weight: 600;
+        white-space: nowrap; 
+        overflow: hidden; 
+        text-overflow:ellipsis; 
+        border-bottom: 2px solid #dfdfdf;
+    }
+    .main-contentbox{
+        position: relative;
+        font-size: 20px;
+        margin-top: 30px;
+        height: 80%;
+        background-color: #d8d7d7;
+        border-radius: 4px;
+    }
+        .main-content{
+            height: 100%;
+            box-sizing: border-box;
+            padding-bottom: 50px;
+        }
+        .main-content-shade{
+            position: absolute;
+            bottom: 0;
+            height: 50px;
+            left: 0;
+            right: 0;       
+            background: linear-gradient(to top, rgba(60,60,60,0.7) 1px, rgba(0,0,0,0));
+            border-radius: 0 0 4px 4px;
+        }
+        .post-submit{
+            height: 100%;
+            width: 100%;
+            cursor: pointer;
+            background-color: transparent;
+            border:none;
+            outline:none;
+        }
+</style>
+</head>
+<body>
+<header class="uni-site-header">
+    <div class="header-location">
+        <div class="header-logo">
+            <a href="Home.html" class="logo-a-lable"></a>
+        </div>
+        <nav class="header-navigation">
+            <ul>
+                <li class="navigation-li-lable">
+                    <a href="Comment.html" class="navigation-a-lable">高校探讨</a>
+                </li>
+                <li class="navigation-li-lable">
+                    <a href="" class="navigation-a-lable">加入大家</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<div class="post-site-main">  
+    <textarea name=""  class="main-title" placeholder="一句话概括中心点"></textarea>
+    <div class="main-contentbox">
+        <textarea name=""  class="main-content" placeholder="多句话表达中心思想"></textarea>
+        <div class="main-content-shade">
+            <input type="submit" class="post-submit" value="">
+        </div>
+    </div>   
+</div>  
+</body>
+<script>
+    
+</script>
+</html>
